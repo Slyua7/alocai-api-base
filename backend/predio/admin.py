@@ -3,4 +3,4 @@ from predio.models import Predio
 
 @admin.register(Predio)
 class PredioAdmin(admin.ModelAdmin):
-    list_display = ('nome', 'id_endereco_predio')
+    list_display = ('nome', 'cep','rua', 'numero')

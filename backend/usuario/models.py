@@ -1,5 +1,4 @@
 from django.db import models
-from enderecosusuario.models import EnderecosUsuario
 from django.contrib.auth.models import User
 
 TIPO_USUARIO = (
@@ -10,7 +9,6 @@ TIPO_USUARIO = (
 class Usuario(models.Model):
     user = models.OneToOneField(User, on_delete=models.PROTECT, related_name='usuario')
     nascimento = models.DateField()
-    id_endereco_usuario = models.ForeignKey(EnderecosUsuario, on_delete=models.PROTECT, related_name='usuario')
     tipo = models.CharField(max_length=10, choices=TIPO_USUARIO)
 
     def __str__(self):

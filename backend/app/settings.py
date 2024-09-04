@@ -29,17 +29,9 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'auth_api',
     'agendamento',
-    'auditorio',
-    'coordenador',
     'departamento',
-    'enderecospredio',
-    'enderecosusuario',
-    'laboratorio',
     'predio',
-    'predio_dep',
-    'professor',
     'sala',
-    'sala_desenho',
     'usuario',
 ]
 
